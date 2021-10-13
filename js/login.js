@@ -11,3 +11,10 @@ function login(){
         alert("Usuario o contraseña incorrecta")
     }
 }
+
+
+document.addEventListener("keyup", function(event) {
+    if (event.key === 'Enter') {
+        login()
+    }
+});
