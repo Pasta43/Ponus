@@ -11,6 +11,19 @@ ul {
     top: 0px;
 }
 
+ul3 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 5%;
+  background-color: #A2C11C;
+  position: fixed;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+
 ul2 {
     list-style-type: none;
     margin: 0;
@@ -53,12 +66,19 @@ ul2 {
     grid-template-columns: repeat(4, 200px);
     grid-auto-rows: minmax(10px, auto);
     grid-gap: 20px;
-    
   }
 
   .imgRedonda{
     width: 100px;
     height: 100px;
+    padding: 2mm;
+    margin: 8px 4px;
+    border-radius: 50%;
+  }
+  
+  .imgRedonda2{
+    width: 200px;
+    height: 200px;
     padding: 2mm;
     margin: 8px 4px;
     border-radius: 50%;
@@ -74,3 +94,31 @@ ul2 {
         text-decoration: none;
         font-size: 16px;
       }
+
+.botonRechazar{
+        background-color: #153B44;
+        border-radius: 5%;
+        color: white;
+        padding: 10px 42px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+
+.ColumnaPerfil{
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  grid-auto-rows: minmax(10px, auto);
+  grid-gap: 20px;
+}
+
+
+.mini2{
+  border-radius: 10%;
+  background-color: #EEEEEE;
+  padding: auto;   
+  width: 600px;
+  height: 500px;
+  margin: -10%;
+}
