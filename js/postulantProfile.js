@@ -30,6 +30,11 @@ function findProfile(id) {
                     <center>
                         <p>${postulant.charge} </p>
                         <p>${postulant.name}</p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p>${postulant.info}</p>
                     </center>
                     <center>
                     </center>
