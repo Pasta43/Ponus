@@ -1,4 +1,4 @@
-postulants=[
+var postulants=[
     {
         id:1,
         charge: "Desarrollador BackEnd",
