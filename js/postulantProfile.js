@@ -11,8 +11,8 @@ function findProfile(id) {
   for (let i = 0; i < postulants.length; i++) {
     let postulant = postulants[i];
     if (postulant.id == id) {
-        console.log(postulant)
-        let txt = `
+      console.log(postulant);
+      let txt = `
                 <center>
                     <img class="imgRedonda2" src="${postulant.photo}" alt="Avatar">
                     <p>${postulant.name}</p>
@@ -41,8 +41,8 @@ function findProfile(id) {
                 </div>
                 `;
 
-        container.innerHTML = txt;
-        break;
+      container.innerHTML = txt;
+      break;
     }
   }
 }
