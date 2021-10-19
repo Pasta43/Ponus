@@ -9,7 +9,7 @@ docReady(function () {
   }
 });
 
-function printAllOffers() {
+function printAllOffers(cards) {
   postulants.forEach((postulant) => {
     let txt = `
         
