@@ -19,7 +19,8 @@ var postulants=[
         name: "Natalia Montenegro",
         photo:"Imagenes/106030850_3039162306164255_2625929002627103347_n.jpg",
         info: "Estudiante de Ingeniería de Sistemas y Telecomunicaciones, cursando 8 semestre, con habilidades en diseño web."
-    },{
+    },
+    {
         id:4,
         charge: "Gerente Comercial",
         name:"Alberto Casallas",
