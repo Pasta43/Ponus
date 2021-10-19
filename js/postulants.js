@@ -32,7 +32,7 @@ function printAllOffers(cards) {
 function printJustOffer(cards, id) {
 
   let justOfferPostulants= findPostulantsByOffer(id);
-  if(justOfferPostulants){
+  if(justOfferPostulants===undefined){
     alert('Por ahora, no hay postulantes para esta oferta');
     window.location.assign('postulants.html')
   }
