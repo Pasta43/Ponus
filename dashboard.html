@@ -30,7 +30,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Empresa</h5>
                             <p class="card-text">Aquí puede editar la información de tu empresa</p>
-                            <a href="#" class="btn btn-primary">Ir a empresa</a>
+                            <button id="bussiness" class="btn btn-primary">Ir a empresa</button>
                         </div>
                     </div>
                 </div>
@@ -78,5 +78,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-
+<script>
+    let bussiness= document.getElementById('bussiness');
+    bussiness.addEventListener('click',function(){
+        alert("Pronto podrás acceder al perfil de tu negocio");
+    })
+</script>
 </html>
