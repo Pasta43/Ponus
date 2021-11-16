@@ -39,7 +39,7 @@ ul2 {
     margin: 0;
 }
 .contenedor {
-    position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -50,7 +50,7 @@ ul2 {
     background-color: #EEEEEE;
     padding: auto;   
     width: 200px;
-    height: 255px;
+    height: 300px;
     margin: 10%;
   }
 
@@ -97,6 +97,16 @@ ul2 {
 
 .botonRechazar{
         background-color: #153B44;
+        border-radius: 5%;
+        color: white;
+        padding: 10px 42px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+.botonRechazar2{
+        background-color: #F25C0E;
         border-radius: 5%;
         color: white;
         padding: 10px 42px;
