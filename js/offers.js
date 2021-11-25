@@ -16,6 +16,5 @@ docReady(function () {
     card.className='col-md-4';
     card.innerHTML=txt;
     container.append(card);
-    console.log(card)
   });
 });
