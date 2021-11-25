@@ -29,21 +29,21 @@ var individualSelectionProcesses=[
     },
     {
         id:5,
-        processId:6,
+        processId:5,
         stage:3,
         postulantId:4,
         deadline:'2021-10-20'
     },
     {
         id:6,
-        processId:6,
+        processId:5,
         stage:4,
         postulantId:7,
         deadline:'2021-10-20'
     },
     {
         id:7,
-        processId:6,
+        processId:5,
         stage:5,
         postulantId:8,
         deadline:'2021-10-30'
