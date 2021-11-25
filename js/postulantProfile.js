@@ -5,11 +5,19 @@ docReady(function () {
     findProfile(parseInt(id));
   }
 });
+function findProcessByPostulant(postulant){
+  for(let i=0;i<individualSelectionProcesses.length;i++){
+    if(individualSelectionProcesses[i].postulantId===postulant.id){
+      return individualSelectionProcesses[i]
+    }
+  }
+}
 
 function findProfile(id) {
   let container = document.getElementsByClassName("ColumnaPerfil")[0];
   for (let i = 0; i < postulants.length; i++) {
     let postulant = postulants[i];
+    let process = findProcessByPostulant(postulant)
     if (postulant.id == id) {
       console.log(postulant);
       let txt = `
@@ -19,7 +27,7 @@ function findProfile(id) {
                     <p>${postulant.charge}</p>
                     <br>
 
-                    <a class="botonPerfil">Iniciar Proceso</a>
+                    <a href="selectionProcessApplied.html?id=${process.processId}" class="botonPerfil btn btn-primary">Iniciar Proceso</a>
                     <br>
                     <br>
                     <br>
