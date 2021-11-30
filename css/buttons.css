@@ -4,3 +4,7 @@
 .btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
     background-color: #253036 !important;
 }
+
+.downBorder{
+    border: 0px 0px 0px 12px solid;
+}

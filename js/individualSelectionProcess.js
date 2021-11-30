@@ -83,7 +83,6 @@ function loadStages(stages, individual) {
 function loadProfile(profile, process, offer) {
   let txt = `
     <img src="${profile.photo}" alt="avatar" class="img-fluid rounded-circle">
-
     <div class="d-grid gap-2 mx-auto">
         <div class="text-center">
             <p>${profile.name}</p>

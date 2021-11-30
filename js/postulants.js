@@ -1,5 +1,5 @@
 docReady(function () {
-  let cards = document.getElementsByClassName("cuadricula")[0];
+  let cards = document.getElementById("postulantContents");
   let searchParams = new URLSearchParams(window.location.search);
   if (searchParams.has("offer")) {
     let offerId = searchParams.get("offer");
@@ -15,15 +15,17 @@ docReady(function () {
 function printAllOffers(cards) {
   postulants.forEach((postulant) => {
     let txt = `
-        
-        <center><img class="imgRedonda" src="${postulant.photo}" alt="Avatar">
-            <p>Nombre: ${postulant.name}</p>
-            <p>Cargo: ${postulant.charge}</p>
-            <a href="PerfilUnico.html?id=${postulant.id}" class="botonPerfil" id="botonPerfil">Ver perfil</a>
-        </center>
+        <div class="card" style="width: 18rem;">
+        <img src="${postulant.photo}" class="card-img-top" alt="...">
+        <div class="card-body ">
+          <h5 class="card-title">${postulant.name}</h5>
+          <p class="card-text">${postulant.charge}</p>
+          <a href="PerfilUnico.html?id=${postulant.id}" class="btn btn-primary btn-lg d-grid gap-2 mx-auto">Ver perfil</a>
+        </div>
+      </div>
         `;
     let card = document.createElement("div");
-    card.className = "mini col-md-4";
+    card.className = "col-md-4";
     card.innerHTML = txt;
     cards.appendChild(card);
   });
@@ -47,7 +49,7 @@ function printJustOffer(cards, id) {
         </center>
         `;
       let card = document.createElement("div");
-      card.className = "mini col-md-4";
+      card.className = "col-md-4";
       card.innerHTML = txt;
       cards.appendChild(card);
     

@@ -15,13 +15,38 @@
 <body>
     <section id="offers">
         <div class="container">
-            <div class="title">
-                <h1>Ofertas activas</h1>
+            <div class="row downBorder">
+                <div class="page-hader">
+                    <div class="title">
+                        <h1>Ofertas activas</h1>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p>Aquí puedes observar las ofertas que has publicado y los postulantes a cada una
+                                        de ellas
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <button id="createOffer" class="btn btn-primary pull-right" role="button">
+                                        Crear nueva oferta
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
             </div>
-            
+
+
+
             <div id="cardsOffer" class="row">
-                
-                
+
+
             </div>
         </div>
     </section>
@@ -31,4 +56,10 @@
     crossorigin="anonymous"></script>
 <script src="js/data/offersData.js"></script>
 <script src="js/offers.js"></script>
+<script>
+    let createButton = document.getElementById("createOffer");
+    createButton.addEventListener("click",function(){
+        alert("Pronto podrás crear nuevas ofertas")
+    })
+</script>
 </html>
